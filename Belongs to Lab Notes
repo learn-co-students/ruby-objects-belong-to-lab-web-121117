@@ -1,0 +1,30 @@
+class Song
+
+  attr_accessor :title, :artist
+
+  def initialize(title)
+    @title = title
+  end
+end
+
+# hotline_bling = Song.new("Hotline Bling")
+# hotline_bling.title
+  # => "Hotline Bling"
+
+  class Artist
+  attr_accessor :name, :genre
+
+  def initialize(name, genre)
+    @name = name
+    @genre = genre
+  end
+
+end
+
+# drake = Artist.new("Drake", "rap")
+# hotline_bling = Song.new("Hotline Bling")
+#
+# hotline_bling.artist = drake
+# now:
+# hotline_bling.artist.genre
+#   # => "rap" because hotline_bling has been set to drake as its artist, and the song class belongs to the artist
